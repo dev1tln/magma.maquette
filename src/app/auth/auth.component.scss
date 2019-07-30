@@ -1,0 +1,56 @@
+.example-container {
+  display: flex;
+  justify-content: center;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+#connection {
+  align-content: center;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+}
+mat-form-field {
+  width: 15em;
+}
+
+.footerConnect {
+  color: gray;
+  font-size: 0.7em;
+  margin-left: 0.9em;
+}
+
+.footerButton {
+  color: #31bae4;
+}
+
+.footer {
+  margin-top: 3.5em;
+  display: flex;
+}
+
+.trait {
+  margin-bottom: -3.5em;
+  background-color: gray;
+  height: 1pt;
+  width: 100%;
+}
+
+#logoMagma {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 14%;
+}
+
+#buttonOk {
+  margin-left: 30%;
+  width: 6em;
+  background: #31bae4;
+  color: white;
+}

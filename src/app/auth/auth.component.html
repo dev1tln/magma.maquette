@@ -1,0 +1,47 @@
+<img id="logoMagma" src="assets/img/Logo1.png" alt="volcano" />
+<div id="connection">
+  <form>
+    <p>
+      <mat-icon>person</mat-icon>
+      <mat-form-field appearance="legacy">
+        <mat-label>username</mat-label>
+        <input matInput placeholder="Placeholder" />
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-icon> vpn_key</mat-icon>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Enter your password"
+          [type]="hide ? 'password' : 'text'"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </p>
+    <!-- <button id="buttonValider">
+    ok
+  </button> -->
+    <button routerLink="/choix_unite" id="buttonOk" mat-raised-button>
+      OK
+    </button>
+  </form>
+</div>
+
+<div class="footer">
+  <p class="footerConnect">Informations de connexion oubliées ?</p>
+  <button class="footerButton" mat-button>Obtenez de l'aide</button>
+</div>
+<div class="trait"></div>
+<div class="footer">
+  <p class="footerConnect">Vous n'avez pas de compte ?</p>
+  <button class="footerButton" mat-button>Inscrivez-vous</button>
+</div>

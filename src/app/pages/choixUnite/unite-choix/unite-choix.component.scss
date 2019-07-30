@@ -1,0 +1,43 @@
+.mat-list-base {
+  background: #80808029;
+  padding-top: 0px;
+}
+
+.mat-list-base .mat-list-item {
+  height: 45px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 2.5em;
+  background: #80808030;
+}
+
+li {
+  display: inline;
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #31bae4;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  color: #0d0d0d;
+  font-family: sans-serif;
+}
+
+img {
+  height: 14%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}

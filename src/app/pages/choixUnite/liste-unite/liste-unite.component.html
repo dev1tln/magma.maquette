@@ -1,0 +1,68 @@
+<mat-vertical-stepper [linear]="true" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Choix unité </ng-template>
+
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          placeholder="Unité"
+          formControlName="firstCtrl"
+          required
+          [matAutocomplete]="autoGroup"
+        />
+        <mat-autocomplete autoActiveFirstOption #autoGroup="matAutocomplete">
+          <mat-optgroup
+            *ngFor="let group of stateGroupOptions | async"
+            [label]="group.letter"
+          >
+            <mat-option *ngFor="let name of group.names" [value]="name">
+              {{ name }}
+            </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <div>
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Choix secteur</ng-template>
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          placeholder="Secteur"
+          formControlName="secondCtrl"
+          required
+          [matAutocomplete]="autoGroup"
+        />
+        <mat-autocomplete autoActiveFirstOption #autoGroup="matAutocomplete">
+          <mat-optgroup
+            *ngFor="let group of stateGroupOptions | async"
+            [label]="group.letter"
+          >
+            <mat-option *ngFor="let name of group.names" [value]="name">
+              {{ name }}
+            </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Retour</button>
+        <button
+          mat-button
+          matStepperNext
+          routerLink="/accueil"
+          routerLinkActive="router-link-active"
+        >
+          Valider
+        </button>
+      </div>
+    </form>
+  </mat-step>
+</mat-vertical-stepper>

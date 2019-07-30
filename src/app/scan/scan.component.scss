@@ -1,0 +1,43 @@
+ul{
+    list-style: none;
+    margin-top: 2.5em;
+    background: #80808030;
+}
+
+li {
+    display: inline;
+    font-size: 0.9em;
+}
+
+a { text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: #31bae4;
+ }
+
+ #blueBand{
+    height: 7%;
+    width: 100vw;
+    background: #31bae4b3;
+    color: #fafafa;
+}
+
+#blueBand .mat-icon{
+    margin-top: -1%
+}
+
+h3{text-shadow: -1px 0 gray, 0 1px gray,
+    1px 0 gray, 0 -1px gray;
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+#scanLieu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}

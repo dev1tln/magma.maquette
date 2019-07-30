@@ -1,0 +1,32 @@
+ul {
+  list-style: none;
+  margin-top: 2.5em;
+  background: #80808030;
+}
+
+li {
+  display: inline;
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #31bae4;
+}
+
+.orangeBand {
+  text-align: center;
+  background: orange;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#littleOrange {
+  height: 3vh;
+}

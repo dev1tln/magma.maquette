@@ -1,0 +1,48 @@
+.mat-table-sticky:first-child {
+  border-right: 2px solid #e0e0e0;
+  padding-left: 0vw;
+}
+
+.mat-table-sticky:last-child {
+  border-left: 2px solid #e0e0e0;
+  padding-right: 0vw;
+}
+
+table.mat-table {
+  border-spacing: 0;
+  text-align: center;
+  width: 98vw;
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+
+table.mat-table tr {
+  border-top: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+th.mat-header-cell {
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+tr.mat-row {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+th.mat-header-cell:nth-child(1n) {
+  color: red;
+}
+th.mat-header-cell:nth-child(2n) {
+  color: green;
+}
+th.mat-header-cell:last-child {
+  color: black;
+}
+
+tr {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.mat-column-select {
+  overflow: initial;
+}

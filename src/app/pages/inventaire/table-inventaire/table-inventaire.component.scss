@@ -1,0 +1,40 @@
+table.mat-table {
+  width: 98vw;
+  margin-left: 1vw;
+}
+
+#libelle {
+  padding-left: 2vh;
+  font-size: 15px;
+}
+
+#libelle .mat-icon {
+  float: right;
+  font-size: 4vh;
+  padding-right: 4vw;
+}
+
+.mat-table-sticky:last-child {
+  border-left: 2px solid #e0e0e0;
+  text-align: center;
+  padding-right: 0vw;
+}
+
+#lesSymboles {
+  font-size: 22px;
+  color: green;
+}
+
+th.mat-header-cell {
+  text-align: center;
+  font-size: 20px;
+}
+
+.example-container {
+  height: 400px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}

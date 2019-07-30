@@ -1,0 +1,92 @@
+.container {
+  display: grid;
+  grid-row-gap: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  color: #ffffff;
+  margin-top: 3em;
+}
+
+ul {
+  list-style: none;
+  margin-top: 2.5em;
+  background: #80808030;
+}
+
+li {
+  display: inline;
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  color: #ffffff;
+  font-size: 2em;
+  height: 2em;
+}
+
+// .even {
+//   background: #ffa500;
+// }
+
+// .odd {
+//   background: #038fb6;
+// }
+
+#button1 {
+  background: #038fb6;
+}
+
+#button2 {
+  background: #0aaddb;
+}
+
+#button3 {
+  background: #57caea;
+}
+
+#button4 {
+  background: #86d9f1;
+}
+
+.active {
+  color: #31bae4;
+}
+
+.mat-card {
+  background: #0579b8e8;
+  font-size: large;
+  color: #ffffff;
+  text-align: center;
+  height: 0%;
+}
+
+.mat-card > :last-child:not(.mat-card-footer) {
+  margin-top: -3%;
+}
+
+article {
+  font-size: 4vh;
+  height: 10vh;
+  padding-top: 5vh;
+  margin-left: 20%;
+}
+
+.aligned-with-icon {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 2vh;
+}
+
+.mat-icon {
+  font-size: 8vh;
+  color: #ff771a;
+}
+
+section {
+  margin-top: 8vh;
+}

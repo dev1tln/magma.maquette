@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+
+ol {
+  list-style-type: none;
+  display: flex;
+  background: #80808042;
+}
+
+ol a {
+  text-decoration: none;
+  color: aqua;
+  padding-left: 3%;
+}

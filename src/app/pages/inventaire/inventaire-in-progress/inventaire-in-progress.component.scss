@@ -1,0 +1,62 @@
+ul {
+  list-style: none;
+  margin-top: 2.5em;
+  background: #80808030;
+}
+
+li {
+  display: inline;
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #31bae4;
+}
+
+#dateInventaire {
+  margin-top: 2vh;
+}
+
+#dateInventaire p {
+  font-size: 118%;
+}
+
+h3 {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.orangeBand {
+  text-align: center;
+  background: orange;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card {
+  background: #0579b8e8;
+  font-size: large;
+  color: #ffffff;
+  text-align: center;
+  height: 0%;
+}
+
+.mat-card > :last-child:not(.mat-card-footer) {
+  margin-top: -3%;
+}
+
+#bigOrange {
+  height: 6vh;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

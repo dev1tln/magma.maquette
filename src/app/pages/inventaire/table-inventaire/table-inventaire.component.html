@@ -1,0 +1,51 @@
+<mat-form-field>
+  <input
+    matInput
+    (keyup)="applyFilter($event.target.value)"
+    placeholder="Désignation"
+  />
+</mat-form-field>
+<div class="example-container">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- <ng-container matColumnDef="position" sticky>
+    <th mat-header-cell *matHeaderCellDef>QR Code</th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      routerLink="/accueil/inventaire/inventaire_in_progress/details"
+    >
+      {{ element.position }}
+    </td>
+  </ng-container> -->
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Désignation</th>
+      <td mat-cell *matCellDef="let element" id="libelle">
+        {{ element.name }}
+        <mat-icon routerLink="/accueil/inventaire_in_progress/mouvement"
+          >swap_horiz</mat-icon
+        >
+        <mat-icon routerLink="/accueil/inventaire_in_progress/details"
+          >assignment</mat-icon
+        >
+      </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol" stickyEnd>
+      <th mat-header-cell *matHeaderCellDef>Symbole</th>
+      <td
+        mat-cell
+        *matCellDef="let element"
+        routerLink="/accueil/inventaire/inventaire_in_progress/details"
+        id="lesSymboles"
+      >
+        <mat-icon>check_circle</mat-icon>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
